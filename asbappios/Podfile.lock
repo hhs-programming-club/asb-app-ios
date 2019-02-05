@@ -2,6 +2,11 @@ PODS:
   - BrickKit (2.5.0)
   - CollectionKit (2.0.2)
   - FSCalendar (2.7.9)
+  - GoogleAPIClient (1.0.5):
+    - GoogleAPIClient/Core (= 1.0.5)
+    - GTMSessionFetcher (~> 1.1)
+  - GoogleAPIClient/Core (1.0.5):
+    - GTMSessionFetcher (~> 1.1)
   - GoogleSignIn (4.2.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -35,6 +40,7 @@ DEPENDENCIES:
   - BrickKit
   - CollectionKit
   - FSCalendar
+  - GoogleAPIClient
   - GoogleSignIn
   - lottie-ios
   - Popover
@@ -48,6 +54,7 @@ SPEC REPOS:
     - BrickKit
     - CollectionKit
     - FSCalendar
+    - GoogleAPIClient
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
@@ -64,6 +71,7 @@ SPEC CHECKSUMS:
   BrickKit: c020bbf868e9b389c2dabc041e50a8268b08ab5c
   CollectionKit: d8a22aa5084ab227cdbbcd7accb2e5c5f2ea31ec
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  GoogleAPIClient: 77df755d41d70ee5a99b7b752614fbb439f19438
   GoogleSignIn: 591e46382014e591269f862ba6e7bc0fbd793532
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
@@ -76,6 +84,6 @@ SPEC CHECKSUMS:
   SwiftEntryKit: ba070426598304c5773d84b54ed8b0763b5f2060
   ViewAnimator: 20df9a24a076c6ee78b77a4dbf1943808c94954e
 
-PODFILE CHECKSUM: b0aa8689f1a91689952d903ce317c5408a3a85bd
+PODFILE CHECKSUM: 9e7aa6df21613b22d0ca9dd247cc84e0ded2b550
 
 COCOAPODS: 1.5.3

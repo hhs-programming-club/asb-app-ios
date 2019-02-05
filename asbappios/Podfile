@@ -16,4 +16,5 @@ pod 'GoogleSignIn'
 pod 'SwiftEntryKit', '~> 0.6.0'
 pod 'FSCalendar'
 pod 'BrickKit'
+pod 'GoogleAPIClient'
 end

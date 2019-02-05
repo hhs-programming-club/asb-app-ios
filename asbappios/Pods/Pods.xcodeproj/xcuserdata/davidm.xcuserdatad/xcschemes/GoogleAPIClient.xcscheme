@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B7BFC1E8FA4A4AD5C6FD32C9332107F3"
-               BlueprintName = "Popover"
+               BlueprintIdentifier = "6967C212569FCDD62578881D91309FD7"
+               BlueprintName = "GoogleAPIClient"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Popover.framework">
+               BuildableName = "GoogleAPIClient.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
