@@ -42,6 +42,7 @@ DEPENDENCIES:
   - FSCalendar
   - GoogleAPIClient
   - GoogleSignIn
+  - GTMOAuth2
   - lottie-ios
   - Popover
   - ScalingCarousel
@@ -84,6 +85,6 @@ SPEC CHECKSUMS:
   SwiftEntryKit: ba070426598304c5773d84b54ed8b0763b5f2060
   ViewAnimator: 20df9a24a076c6ee78b77a4dbf1943808c94954e
 
-PODFILE CHECKSUM: 9e7aa6df21613b22d0ca9dd247cc84e0ded2b550
+PODFILE CHECKSUM: e7b78fe9914bacc3421636ea9232e4b869f7c5ce
 
 COCOAPODS: 1.5.3
