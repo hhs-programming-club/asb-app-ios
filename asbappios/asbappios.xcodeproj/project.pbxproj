@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55459B3FA0D862516C26565E /* Pods_asbappios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F555D6CF833519642B61972D /* Pods_asbappios.framework */; };
 		7BADBAB421E46E7200C12071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADBAB321E46E7200C12071 /* AppDelegate.swift */; };
 		7BADBAB621E46E7200C12071 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADBAB521E46E7200C12071 /* FirstViewController.swift */; };
 		7BADBAB821E46E7200C12071 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADBAB721E46E7200C12071 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C1567C4A0AB9BA873B3111E /* Pods-asbappios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asbappios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asbappios/Pods-asbappios.debug.xcconfig"; sourceTree = "<group>"; };
 		7BADBAB021E46E7200C12071 /* asbappios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asbappios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BADBAB321E46E7200C12071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BADBAB521E46E7200C12071 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		7BADBABC21E46E7400C12071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BADBABF21E46E7400C12071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BADBAC121E46E7400C12071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B310AD0FEC33ADBD9C6C745F /* Pods-asbappios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asbappios.release.xcconfig"; path = "Pods/Target Support Files/Pods-asbappios/Pods-asbappios.release.xcconfig"; sourceTree = "<group>"; };
+		F555D6CF833519642B61972D /* Pods_asbappios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asbappios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55459B3FA0D862516C26565E /* Pods_asbappios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6510151CAAC9142DE73FF542 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C1567C4A0AB9BA873B3111E /* Pods-asbappios.debug.xcconfig */,
+				B310AD0FEC33ADBD9C6C745F /* Pods-asbappios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71390D095926A5E587A3176A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F555D6CF833519642B61972D /* Pods_asbappios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7BADBAA721E46E7200C12071 = {
 			isa = PBXGroup;
 			children = (
 				7BADBAB221E46E7200C12071 /* asbappios */,
 				7BADBAB121E46E7200C12071 /* Products */,
+				6510151CAAC9142DE73FF542 /* Pods */,
+				71390D095926A5E587A3176A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BADBAC421E46E7400C12071 /* Build configuration list for PBXNativeTarget "asbappios" */;
 			buildPhases = (
+				94DB9830A33C96B626F17835 /* [CP] Check Pods Manifest.lock */,
 				7BADBAAC21E46E7200C12071 /* Sources */,
 				7BADBAAD21E46E7200C12071 /* Frameworks */,
 				7BADBAAE21E46E7200C12071 /* Resources */,
+				C796B7D8D792EF4E2675876F /* [CP] Embed Pods Frameworks */,
+				5615AD872F9F004DC028FA5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5615AD872F9F004DC028FA5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-asbappios/Pods-asbappios-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-asbappios/Pods-asbappios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94DB9830A33C96B626F17835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-asbappios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C796B7D8D792EF4E2675876F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-asbappios/Pods-asbappios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BrickKit/BrickKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ScalingCarousel/ScalingCarousel.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrickKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScalingCarousel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-asbappios/Pods-asbappios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BADBAAC21E46E7200C12071 /* Sources */ = {
@@ -284,6 +404,7 @@
 		};
 		7BADBAC521E46E7400C12071 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1567C4A0AB9BA873B3111E /* Pods-asbappios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +423,7 @@
 		};
 		7BADBAC621E46E7400C12071 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B310AD0FEC33ADBD9C6C745F /* Pods-asbappios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
