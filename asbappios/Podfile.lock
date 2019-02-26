@@ -1,6 +1,4 @@
 PODS:
-  - BrickKit (2.5.0)
-  - CollectionKit (2.0.2)
   - FSCalendar (2.7.9)
   - GoogleAPIClient (1.0.5):
     - GoogleAPIClient/Core (= 1.0.5)
@@ -29,31 +27,21 @@ PODS:
     - GTMSessionFetcher/Core (= 1.2.0)
   - lottie-ios (2.5.0)
   - Popover (1.2.0)
-  - QuickLayout (2.0.2)
-  - ScalingCarousel (2.3)
   - SnapKit (4.0.0)
-  - SwiftEntryKit (0.6.0):
-    - QuickLayout (= 2.0.2)
   - ViewAnimator (2.1.2)
 
 DEPENDENCIES:
-  - BrickKit
-  - CollectionKit
   - FSCalendar
   - GoogleAPIClient
   - GoogleSignIn
   - GTMOAuth2
   - lottie-ios
   - Popover
-  - ScalingCarousel
   - SnapKit (~> 4.0.0)
-  - SwiftEntryKit (~> 0.6.0)
   - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - BrickKit
-    - CollectionKit
     - FSCalendar
     - GoogleAPIClient
     - GoogleSignIn
@@ -62,15 +50,10 @@ SPEC REPOS:
     - GTMSessionFetcher
     - lottie-ios
     - Popover
-    - QuickLayout
-    - ScalingCarousel
     - SnapKit
-    - SwiftEntryKit
     - ViewAnimator
 
 SPEC CHECKSUMS:
-  BrickKit: c020bbf868e9b389c2dabc041e50a8268b08ab5c
-  CollectionKit: d8a22aa5084ab227cdbbcd7accb2e5c5f2ea31ec
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   GoogleAPIClient: 77df755d41d70ee5a99b7b752614fbb439f19438
   GoogleSignIn: 591e46382014e591269f862ba6e7bc0fbd793532
@@ -79,12 +62,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Popover: 28c1ac8e937ab2b3965bd2da7dd18324357abc41
-  QuickLayout: a730730b646b231fd4ef7cffaeb1e81fe0e1ca92
-  ScalingCarousel: ee866c34c01b784b6edf9009f12ea73935517e3e
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwiftEntryKit: ba070426598304c5773d84b54ed8b0763b5f2060
   ViewAnimator: 20df9a24a076c6ee78b77a4dbf1943808c94954e
 
-PODFILE CHECKSUM: e7b78fe9914bacc3421636ea9232e4b869f7c5ce
+PODFILE CHECKSUM: 3577fed9912780249d3b658bb1190c1796bee250
 
 COCOAPODS: 1.5.3
