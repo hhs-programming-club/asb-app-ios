@@ -1,20 +1,20 @@
 {
-  "product": "Club List Schema",
-  "version": 3.1,
-  "data": {
-    "clubs": [
-      {
-        "name": "Future Business Leaders of America",
-        "genre": "Business"
-      },
-      {
-        "name": "HHS Programming",
-        "genre": "Computer Science"
-      },
-      {
-        "name": "HHS Robotics",
-        "genre": "Computer Science"
-      }
-    ]
-  }
+    "product":"ClubListSchema",
+    "version":3.1,
+    "data":{
+    "clubs":[
+        {
+        "name":"Future Business Leaders of America",
+        "genre":"Business"
+        },
+        {
+        "name":"HHS Programming",
+        "genre":"Computer Science"
+        },
+        {
+        "name":"HHS Robotics",
+        "genre":"Computer Science"
+        }
+    ]
+    }
 }

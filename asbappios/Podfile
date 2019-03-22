@@ -14,4 +14,7 @@ pod 'GoogleSignIn'
 pod 'FSCalendar'
 pod 'GoogleAPIClient'
 pod 'GTMOAuth2'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
 end

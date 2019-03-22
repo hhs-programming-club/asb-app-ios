@@ -7,11 +7,56 @@
 //
 
 import UIKit
+import Firebase
+
 
 class ClubTableViewController: UITableViewController {
 
+    var clubList: [Dictionary<String, AnyObject>] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let db = Firebase.Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+        
+//        _ = imageRef.putData(data, metadata: nil, completion: { (metadata,error ) in
+//            guard let metadata = metadata else{
+//                print(error)
+//                return
+//            }
+//            let downloadURL = metadata.path
+//            print(downloadURL)
+//        })
+        
+        db.collection("clubs").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+//                    print("\(document.documentID) => \(document.data())")
+                    let data = (document.data() as NSDictionary)["clubs_names"] as! NSArray
+                    
+                    for club in data
+                    {
+//                        let club = club as Dictionary
+                        let club = club as! NSDictionary
+                        var dict = Dictionary<String, AnyObject>()
+                        dict["name"] = club["name"] as! NSString
+                        dict["genre"] = club["genre"] as! NSString
+                        dict["identifier"] = club["identifier"] as! NSString
+                        print(club["identifier"] as! NSString)
+                        self.clubList.append(dict)
+                    }
+//                    print("dog")
+                    self.tableView.reloadData()
+
+                }
+            }
+        }
+        
+        
         
         if let path = Bundle.main.path(forResource: "clubjson", ofType: "json")
         {
@@ -20,10 +65,19 @@ class ClubTableViewController: UITableViewController {
                     print("Test")
                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                     let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                    if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let clubs = jsonResult["clubs"] as? [NSArray] {
+//
+//                    if let jsonResult = jsonResult as! Dictionary<String, AnyObject>
+//                    {
+//
+//
+//
+//                    }
+                    
+                    if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let data = jsonResult["data"] as? Dictionary<String, AnyObject> {
                         
                         // do stuff
-                        let m = clubs
+//                        clubList = data["clubs"] as! [Dictionary<String, AnyObject>]
+                        self.tableView.reloadData()
                         print("Read")
                     }
                 } catch {
@@ -54,16 +108,23 @@ class ClubTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        if self.clubList.count < 2
+        {
+            return 0
+        }
+        return self.clubList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ClubCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClubCell", for: indexPath) as! ClubTableViewCell
         
-        // Configure the cell...
+        let club = clubList[indexPath.row]
         
-        
+        cell.titleLabel.text = club["name"] as? String
+        cell.genreLabel.text = " " + (club["genre"] as! String)
+        cell.identifier = club["identifier"] as! String
+        cell.addImageURL(identifier: club["identifier"] as! String)
         return cell
     }
     

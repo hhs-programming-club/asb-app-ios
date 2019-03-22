@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		55459B3FA0D862516C26565E /* Pods_asbappios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F555D6CF833519642B61972D /* Pods_asbappios.framework */; };
+		7B2828FC2242109700717190 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B2828FB2242109700717190 /* GoogleService-Info.plist */; };
 		7B5F63C12240DE6E00EB7A2A /* ClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */; };
 		7B5F63E22240DF5F00EB7A2A /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63D12240DF5E00EB7A2A /* BaseRoundedCardCell.swift */; };
 		7B5F63F52240E8EA00EB7A2A /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */; };
+		7B7A7153224188F10057BD32 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A7152224188F10057BD32 /* MapViewController.swift */; };
 		7B82F74022418030006A5DC0 /* clubjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B82F73F2241802F006A5DC0 /* clubjson.json */; };
 		7BADBAB421E46E7200C12071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADBAB321E46E7200C12071 /* AppDelegate.swift */; };
 		7BADBAB621E46E7200C12071 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADBAB521E46E7200C12071 /* FirstViewController.swift */; };
@@ -22,9 +24,11 @@
 
 /* Begin PBXFileReference section */
 		6C1567C4A0AB9BA873B3111E /* Pods-asbappios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asbappios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asbappios/Pods-asbappios.debug.xcconfig"; sourceTree = "<group>"; };
+		7B2828FB2242109700717190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubTableViewController.swift; sourceTree = "<group>"; };
 		7B5F63D12240DF5E00EB7A2A /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 		7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubTableViewCell.swift; sourceTree = "<group>"; };
+		7B7A7152224188F10057BD32 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7B82F73F2241802F006A5DC0 /* clubjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = clubjson.json; path = SampleData/clubjson.json; sourceTree = SOURCE_ROOT; };
 		7BADBAB021E46E7200C12071 /* asbappios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asbappios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BADBAB321E46E7200C12071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				7BADBAB321E46E7200C12071 /* AppDelegate.swift */,
 				7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */,
+				7B7A7152224188F10057BD32 /* MapViewController.swift */,
 				7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */,
 				7BADBAB521E46E7200C12071 /* FirstViewController.swift */,
 				7BADBAB721E46E7200C12071 /* SecondViewController.swift */,
@@ -98,6 +103,7 @@
 				7B5F63D12240DF5E00EB7A2A /* BaseRoundedCardCell.swift */,
 				7B82F73F2241802F006A5DC0 /* clubjson.json */,
 				7BADBABE21E46E7400C12071 /* LaunchScreen.storyboard */,
+				7B2828FB2242109700717190 /* GoogleService-Info.plist */,
 				7BADBAC121E46E7400C12071 /* Info.plist */,
 			);
 			path = asbappios;
@@ -166,6 +172,7 @@
 			files = (
 				7BADBAC021E46E7400C12071 /* LaunchScreen.storyboard in Resources */,
 				7BADBABD21E46E7400C12071 /* Assets.xcassets in Resources */,
+				7B2828FC2242109700717190 /* GoogleService-Info.plist in Resources */,
 				7B82F74022418030006A5DC0 /* clubjson.json in Resources */,
 				7BADBABB21E46E7200C12071 /* Main.storyboard in Resources */,
 			);
@@ -227,29 +234,47 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-asbappios/Pods-asbappios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClient/GoogleAPIClient.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,6 +294,7 @@
 				7B5F63F52240E8EA00EB7A2A /* ClubTableViewCell.swift in Sources */,
 				7BADBAB421E46E7200C12071 /* AppDelegate.swift in Sources */,
 				7BADBAB621E46E7200C12071 /* FirstViewController.swift in Sources */,
+				7B7A7153224188F10057BD32 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
