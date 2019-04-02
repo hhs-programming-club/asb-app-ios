@@ -128,6 +128,16 @@ class ClubTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Was selected at row: ")
+        print(indexPath.item)
+        let rowNum = indexPath.item
+        
+//        self.performSegue(withIdentifier: "clubDetailSegue")
+//        self.navigationController?.performSegue(withIdentifier: "clubDetailSegue", sender: self)
+        self.performSegue(withIdentifier: "clubDetailSegue", sender: self)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55459B3FA0D862516C26565E /* Pods_asbappios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F555D6CF833519642B61972D /* Pods_asbappios.framework */; };
 		7B2828FC2242109700717190 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B2828FB2242109700717190 /* GoogleService-Info.plist */; };
+		7B2EC27A2253FF5A00E248EE /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EC2792253FF5A00E248EE /* ClubDetailViewController.swift */; };
 		7B5F63C12240DE6E00EB7A2A /* ClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */; };
 		7B5F63E22240DF5F00EB7A2A /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63D12240DF5E00EB7A2A /* BaseRoundedCardCell.swift */; };
 		7B5F63F52240E8EA00EB7A2A /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		6C1567C4A0AB9BA873B3111E /* Pods-asbappios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asbappios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asbappios/Pods-asbappios.debug.xcconfig"; sourceTree = "<group>"; };
 		7B2828FB2242109700717190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B2EC2792253FF5A00E248EE /* ClubDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
 		7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubTableViewController.swift; sourceTree = "<group>"; };
 		7B5F63D12240DF5E00EB7A2A /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 		7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				7BADBAB321E46E7200C12071 /* AppDelegate.swift */,
+				7B2EC2792253FF5A00E248EE /* ClubDetailViewController.swift */,
 				7B5F63C02240DE6E00EB7A2A /* ClubTableViewController.swift */,
 				7B7A7152224188F10057BD32 /* MapViewController.swift */,
 				7B5F63F32240E8EA00EB7A2A /* ClubTableViewCell.swift */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BADBAB821E46E7200C12071 /* SecondViewController.swift in Sources */,
+				7B2EC27A2253FF5A00E248EE /* ClubDetailViewController.swift in Sources */,
 				7B5F63C12240DE6E00EB7A2A /* ClubTableViewController.swift in Sources */,
 				7B5F63E22240DF5F00EB7A2A /* BaseRoundedCardCell.swift in Sources */,
 				7B5F63F52240E8EA00EB7A2A /* ClubTableViewCell.swift in Sources */,
