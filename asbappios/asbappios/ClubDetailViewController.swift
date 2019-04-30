@@ -11,10 +11,12 @@ import UIKit
 class ClubDetailViewController: UIViewController {
 
     @IBOutlet weak var clubTitleLabel: UILabel!
+    var clubTitle: String = "dd"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clubTitleLabel.text = "Programming Club"
+        clubTitleLabel.text = clubTitle
+        navigationItem.title = clubTitle
 
         // Do any additional setup after loading the view.
     }

@@ -38,6 +38,7 @@ class ClubTableViewCell: UITableViewCell {
         
         let blur = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
         blur.frame = bottomOverlay.bounds
+        blur.frame = super.bounds
         blur.isUserInteractionEnabled = false
         bottomOverlay.insertSubview(blur, at: 0)
         self.isHidden = true

@@ -135,7 +135,29 @@ class ClubTableViewController: UITableViewController {
         
 //        self.performSegue(withIdentifier: "clubDetailSegue")
 //        self.navigationController?.performSegue(withIdentifier: "clubDetailSegue", sender: self)
+        
+//        var detailView = ClubDetailViewController()
+//        detailView.clubTitle = "It works"
+//        navigationController?.pushViewController(detailView, animated: true)
+        
         self.performSegue(withIdentifier: "clubDetailSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("the segue was received")
+        let detailController = segue.destination as! ClubDetailViewController
+        detailController.clubTitle = "it worked!"
+        let indexPath = self.tableView.indexPathForSelectedRow
+        let club = clubList[indexPath!.row]
+        
+        detailController.clubTitle = club["name"] as! String
+        
+//        if segue.identifier == "showDetail" {
+//            if let indexPath = self.tableView.indexPathForSelectedRow {
+//                let controller = segue.destination as! ViewControllerB
+//                controller.selectedName = objects[indexPath.row]
+//            }
+//        }
     }
     
 
